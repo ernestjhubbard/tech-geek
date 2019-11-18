@@ -9,9 +9,7 @@ if ($request['method'] === 'GET') {
   while($row = mysqli_fetch_assoc($result)){
     $output[] = $row;
   }
-  $response['body'] = [
-    'message' => $output
-  ];
+  $response['body'] = $output;
   send($response);
 }
 ?>
