@@ -10,6 +10,7 @@ export default function ProductListItem(props) {
         <h5 className="card-title">{props.name}</h5>
         <p>${props.price}</p>
         <p className="card-text">{props.desc}</p>
+        <button className="btn btn-primary" onClick={() => props.setView('details', { productId: props.id })}>Info</button>
       </div>
     </div>
   );
