@@ -13,8 +13,7 @@ if ($request['method'] === 'GET') {
     $result = mysqli_query($link, $query);
     mysqli_num_rows($result);
     $row = mysqli_fetch_assoc($result);
-    $output = $row;
-    $response['body'] = $output;
+    $response['body'] = $row;
     send($response);
   }
   else{
