@@ -9,8 +9,13 @@ class ProductList extends React.Component {
   }
 
   render() {
+    const products = this.state.products.map((id, index) =>
+      <ProductListItem props={this.props} key={index} price={id.price} name={id.name} image={id.image} desc={id.shortDescription} />
+    );
     return (
-      <ProductListItem />
+      <div className="container col-xs-12 col-xl-12 d-flex flex-wrap  justify-content-center">
+        {products}
+      </div>
     );
   }
 
@@ -27,7 +32,10 @@ class ProductList extends React.Component {
     };
     fetch('/api/products', config)
       .then(results => results.json())
-      .then(data => data);
+      .then(data => {
+        const dataArray = data.map(product => product);
+        this.setState({ products: this.state.products.concat(dataArray) });
+      });
   }
 }
 

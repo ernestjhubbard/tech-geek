@@ -8,7 +8,13 @@ class Header extends React.Component {
   }
 
   render() {
-    return <h1>Wicked Sales</h1>;
+    return (
+      <nav className="mb-3 navbar navbar-expand-sm navbar-light col-xs-12 w-100 bg-success">
+        <div className="container">
+          <a className="navbar-brand" href="#"><i className="fas fa-dollar-sign"></i> Wicked Sales</a>
+        </div>
+      </nav>
+    );
   }
 }
 
