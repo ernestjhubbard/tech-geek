@@ -12,13 +12,8 @@ if ($request['method'] === 'GET') {
     }
     $result = mysqli_query($link, $query);
     mysqli_num_rows($result);
-    $output = [];
-    while($row = mysqli_fetch_assoc($result)){
-    $output[] = $row;
-    }
-    if(empty($output)){
-      throw new ApiError('product does not exist', 404);
-    }
+    $row = mysqli_fetch_assoc($result);
+    $output = $row;
     $response['body'] = $output;
     send($response);
   }
