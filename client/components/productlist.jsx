@@ -3,7 +3,6 @@ import ProductListItem from './product-list-item.jsx';
 class ProductList extends React.Component {
   constructor(props) {
     super(props);
-    this.props = props;
     this.state = {
       products: []
     };
