@@ -10,10 +10,19 @@ class ProductList extends React.Component {
 
   render() {
     const products = this.state.products.map((id, index) =>
-      <ProductListItem props={this.props} key={index} price={id.price} name={id.name} image={id.image} desc={id.shortDescription} />
+      <ProductListItem
+        props={this.props}
+        key={index}
+        id={id.productid}
+        price={id.price}
+        name={id.name}
+        image={id.image}
+        longDesc={id.longDescription}
+        desc={id.shortDescription}
+        setView={this.props.setView} />
     );
     return (
-      <div className="container col-xs-12 col-xl-12 d-flex flex-wrap  justify-content-center">
+      <div className="container col-xs-12 col-xl-12 d-flex flex-wrap justify-content-center">
         {products}
       </div>
     );
