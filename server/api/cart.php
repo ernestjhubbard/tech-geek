@@ -45,8 +45,10 @@ if($request['method'] === 'POST'){
                   
     mysqli_query($link, $cartItems);
     $cartItemId = mysqli_insert_id($link);
-    $cartDB =   " SELECT p.`name`, p.`productId`,p.`price`,p.`shortDescription`,p.`name`, c.`cartItemId` 
-                  FROM products AS p JOIN cartItems AS c ON c.`cartItemId` = p.`productId`
+    $cartDB =   " SELECT p.`name`, p.`productId`,p.`price`,p.`shortDescription`, c.`cartItemId` 
+                  FROM products AS p 
+                  JOIN cartItems AS c 
+                  ON c.`cartItemId` = p.`productId`
                   WHERE c.`cartId` = $cartId";
                   
     $results = mysqli_query($link, $cartDB);
