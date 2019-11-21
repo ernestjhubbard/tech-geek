@@ -7,7 +7,7 @@ export default function Header(props) {
         <a className="navbar-brand"><i className="fas fa-dollar-sign"></i> Wicked Sales</a>
         <h4 className="float-right">
           {props.count} Items
-          <i className="fas fa-shopping-cart"></i>
+          <i className="fas fa-shopping-cart" onClick={() => props.setView('cart', {})}></i>
         </h4>
       </div>
     </nav>
