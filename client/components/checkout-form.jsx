@@ -18,7 +18,7 @@ class CheckoutForm extends React.Component {
       <div>
         <h1>My Cart</h1>
         <h4>Total Price ${total}</h4>
-        <form action="">
+        <form onSubmit={() => this.props.placeOrder(this.state)}>
           <div className="form-group" >
             <label htmlFor="name">Name</label>
             <input className="form-control form-control-sm"
@@ -34,7 +34,7 @@ class CheckoutForm extends React.Component {
               name="creditCard"
               onChange={this.changeHandler}
               value={this.state.creditCard}
-              type="email"
+              type="creditCard"
             ></input>
           </div>
           <div className="form-group">
@@ -46,7 +46,7 @@ class CheckoutForm extends React.Component {
               type="text"
             ></input>
           </div>
-          <button className="btn btn-primary" onClick={() => this.props.placeOrder(this.state)}>Submit</button>
+          <button type="submit" className="btn btn-primary" value="Submit">Submit</button>
         </form>
         <p onClick={() => this.props.setView('catalog', {})}>{sentence}</p>
       </div>

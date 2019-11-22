@@ -76,6 +76,7 @@ export default class App extends React.Component {
   }
 
   placeOrder({ name, creditCard, shippingAddress }) {
+    event.preventDefault();
     const config = {
       method: 'POST',
       body: JSON.stringify({ name, creditCard, shippingAddress }),
