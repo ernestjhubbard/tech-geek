@@ -24,7 +24,7 @@ if ($request['method'] === 'POST') {
   mysqli_stmt_bind_param($prepared, 'dsss', $_SESSION['cart_id'], $name, $creditCard, $shippingAddress);
   mysqli_stmt_execute($prepared);
   $insert = mysqli_insert_id($link);
-  $queryOrders = "SELECT * FROM orders WHERE $insert = orders.`orderId`";
+  $queryOrders = "SELECT name, creditCard, shippingAddress FROM orders WHERE $insert = orders.`orderId`";
   $query = mysqli_query($link, $queryOrders);
   $response = mysqli_fetch_assoc($query);
   $response['body']= $response;
