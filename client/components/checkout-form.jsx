@@ -18,34 +18,36 @@ class CheckoutForm extends React.Component {
       <div>
         <h1>My Cart</h1>
         <h4>Total Price ${total}</h4>
-        <div className="form-group" >
-          <label htmlFor="name">Name</label>
-          <input className="form-control form-control-sm"
-            name="name"
-            onChange={this.changeHandler}
-            value={this.state.name}
-            type="text"
-          ></input>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Credit Card</label>
-          <input className="form-control form-control-sm"
-            name="creditCard"
-            onChange={this.changeHandler}
-            value={this.state.creditCard}
-            type="email"
-          ></input>
-        </div>
-        <div className="form-group">
-          <label htmlFor="company">Shipping Address</label>
-          <input className="form-control form-control-sm"
-            name="shippingAddress"
-            onChange={this.changeHandler}
-            value={this.state.shippingAddress}
-            type="text"
-          ></input>
-        </div>
-        <button className="btn btn-primary" onClick={() => this.props.placeOrder(this.state)}>Submit</button>
+        <form action="">
+          <div className="form-group" >
+            <label htmlFor="name">Name</label>
+            <input className="form-control form-control-sm"
+              name="name"
+              onChange={this.changeHandler}
+              value={this.state.name}
+              type="text"
+            ></input>
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Credit Card</label>
+            <input className="form-control form-control-sm"
+              name="creditCard"
+              onChange={this.changeHandler}
+              value={this.state.creditCard}
+              type="email"
+            ></input>
+          </div>
+          <div className="form-group">
+            <label htmlFor="company">Shipping Address</label>
+            <input className="form-control form-control-sm"
+              name="shippingAddress"
+              onChange={this.changeHandler}
+              value={this.state.shippingAddress}
+              type="text"
+            ></input>
+          </div>
+          <button className="btn btn-primary" onClick={() => this.props.placeOrder(this.state)}>Submit</button>
+        </form>
         <p onClick={() => this.props.setView('catalog', {})}>{sentence}</p>
       </div>
     );
