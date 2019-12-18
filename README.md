@@ -4,13 +4,13 @@ A full stack LAMP & React shopping cart app.
 
 # Technologies Used
 
-React.js
-Webpack 4
-Bootstrap 4
-PHP
-MySQL
-CSS3
-HTML5
+- React.js
+- Webpack 4
+- Bootstrap 4
+- PHP
+- MySQL
+- CSS3
+- HTML5
 
 
 # Preview
