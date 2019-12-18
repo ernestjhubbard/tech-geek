@@ -26,3 +26,7 @@ System Requirements
 - MySQL
 
 Install all dependencies with npm install
+
+# Try it out
+
+Here at https://wicked-sales.ejhcodes.com
