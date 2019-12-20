@@ -34,7 +34,7 @@ class ProductList extends React.Component {
 
   getProducts() {
     fetch('/api/products')
-      .then(results => results.json())
+      .then(results => { return results.json(); })
       .then(data => {
         const dataArray = data.map(product => product);
         this.setState({ products: this.state.products.concat(dataArray) });
