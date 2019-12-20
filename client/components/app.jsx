@@ -51,13 +51,7 @@ export default class App extends React.Component {
   }
 
   getCartItems() {
-    const config = {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-    fetch('/api/cart', config)
+    fetch('/api/cart')
       .then(results => results.json())
       .then(data => this.setState({ cart: this.state.cart.concat(data) }));
   }

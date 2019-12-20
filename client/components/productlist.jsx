@@ -33,13 +33,7 @@ class ProductList extends React.Component {
   }
 
   getProducts() {
-    const config = {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    };
-    fetch('/api/products', config)
+    fetch('/api/products')
       .then(results => results.json())
       .then(data => {
         const dataArray = data.map(product => product);
