@@ -2,3 +2,7 @@
   object-fit: contain;
   height: 250px;
 }
+
+.card{
+  min-height: 500px;
+}
