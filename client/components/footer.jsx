@@ -6,9 +6,6 @@ export default function Footer(props) {
       <div className="container d-flex col-xs-10">
         <h2> ${props.total}</h2>
       </div>
-      <div className="container d-flex">
-        <button className="btn btn-primary center float-right" onClick={() => props.setview('checkout', {})}>Checkout</button>
-      </div>
     </nav>
   );
 }

@@ -26,6 +26,7 @@ class CheckoutForm extends React.Component {
               onChange={this.changeHandler}
               value={this.state.name}
               type="text"
+              required
             ></input>
           </div>
           <div className="form-group">
@@ -35,6 +36,7 @@ class CheckoutForm extends React.Component {
               onChange={this.changeHandler}
               value={this.state.creditCard}
               type="creditCard"
+              required
             ></input>
           </div>
           <div className="form-group">
@@ -44,6 +46,7 @@ class CheckoutForm extends React.Component {
               onChange={this.changeHandler}
               value={this.state.shippingAddress}
               type="text"
+              required
             ></input>
           </div>
           <button type="submit" className="btn btn-primary" value="Submit">Submit</button>

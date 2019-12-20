@@ -16,7 +16,7 @@ export default function CartSummary(props) {
       <h1>My Cart</h1>
       <p onClick={() => props.setView('catalog', {})}>{sentence}</p>
       {cartArray}
-      <Footer setview={props.setView} total={total} placeorder={props.placeorder} />
+      <Footer setview={props.setView} total={total} cart={props.cart} placeorder={props.placeorder} />
     </div>
   );
 }
