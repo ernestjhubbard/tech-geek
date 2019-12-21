@@ -11,8 +11,12 @@ export default function CartSummary(props) {
 
   );
 
+  const checkoutButton = <button className="btn checkout btn-primary center float-right col-2" onClick={() => props.setView('checkout', {})}>Checkout</button>;
   return (
     <div>
+      <div className="container text-right">
+        {props.cart.length === 0 ? null : checkoutButton}
+      </div>
       <h1>My Cart</h1>
       <p onClick={() => props.setView('catalog', {})}>{sentence}</p>
       {cartArray}
