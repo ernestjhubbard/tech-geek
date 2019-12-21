@@ -2,6 +2,9 @@
   object-fit: contain;
   height: 250px;
 }
+.image-width{
+  width: 250px;
+}
 
 .card{
   min-height: 500px;
