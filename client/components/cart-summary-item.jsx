@@ -7,8 +7,8 @@ export default function CartSummaryItem(props) {
   const shortDesc = props.shortDescription;
 
   return (
-    <div className="card col-xs-12 col-xl-12 col-l-12 col-m-12 h-25 m-2">
-      <div className="h-50 col-xs-12">
+    <div className="card col-10 mb-4 m-auto">
+      <div className="col-xs-12">
         <div className="col-xs-4 col-xl-4 d-inline-block">
           <img className="image-height col-xs-3" src={image} alt="" />
         </div>

@@ -15,7 +15,7 @@ class CheckoutForm extends React.Component {
     const sentence = '< Back to Catalog';
     const total = this.props.cart.reduce((total, value) => (total + value.price), 0);
     return (
-      <div>
+      <div className="container w-50">
         <h1>My Cart</h1>
         <h4>Total Price ${total}</h4>
         <form onSubmit={() => this.props.placeOrder(this.state)}>
