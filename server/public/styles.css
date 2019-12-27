@@ -9,3 +9,7 @@
 .card{
   min-height: 500px;
 }
+
+.float-right {
+  cursor: pointer;
+}
