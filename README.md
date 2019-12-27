@@ -1,4 +1,4 @@
-# Wicked-Sales
+# Tech Geek
 
 A full stack LAMP & React shopping cart app.
 
@@ -22,11 +22,11 @@ A full stack LAMP & React shopping cart app.
 System Requirements
 
 - Node
-- NPM 
+- NPM
 - MySQL
 
 Install all dependencies with npm install
 
 # Try it out
 
-Here at https://wicked-sales.ejhcodes.com
+Here at https://tech-geek.ejhcodes.com

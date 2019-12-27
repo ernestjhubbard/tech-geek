@@ -1,5 +1,5 @@
 {
-  "name": "wicked-sales",
+  "name": "tech-geek",
   "version": "1.0.0",
   "private": true,
   "description": "A full stack LAMP & React shopping cart app.",
@@ -100,13 +100,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Learning-Fuze/wicked-sales.git"
+    "url": "git+https://github.com/Learning-Fuze/tech-geek.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Learning-Fuze/wicked-sales/issues"
+    "url": "https://github.com/Learning-Fuze/tech-geek/issues"
   },
-  "homepage": "https://github.com/Learning-Fuze/wicked-sales#readme"
+  "homepage": "https://github.com/Learning-Fuze/tech-geek#readme"
 }
