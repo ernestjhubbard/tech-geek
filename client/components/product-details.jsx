@@ -14,7 +14,7 @@ class ProductDetails extends React.Component {
     const sentence = '< Back to Catalog';
     return (
       <div className="card col-xs-12 col-xl-12 col-l-12 col-m-12 h-25 m-2">
-        <p onClick={() => this.props.setView('catalog', {})}>{sentence}</p>
+        <p className="catalog" onClick={() => this.props.setView('catalog', {})}>{sentence}</p>
         <div className="h-50 col-xs-12">
           <div className="col-xs-4 col-xl-4 d-inline-block">
             <img className=" image-height col-xs-3" src={currentId.image} alt="" />

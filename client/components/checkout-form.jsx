@@ -51,7 +51,7 @@ class CheckoutForm extends React.Component {
           </div>
           <button type="submit" className="btn btn-primary" value="Submit">Submit</button>
         </form>
-        <p onClick={() => this.props.setView('catalog', {})}>{sentence}</p>
+        <p className="catalog" onClick={() => this.props.setView('catalog', {})}>{sentence}</p>
       </div>
     );
   }
