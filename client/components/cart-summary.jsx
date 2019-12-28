@@ -19,7 +19,7 @@ export default function CartSummary(props) {
       </div>
       {cartArray}
       <div className="row d-flex col-10 justify-content-evenly m-auto">
-        <h2 className="col-10">Total: $ {total}</h2>
+        <h2 className="col-10 mt-2">Total: $ {total}</h2>
         {props.cart.length === 0 ? null : checkoutButton}
       </div>
     </div>
