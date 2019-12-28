@@ -18,7 +18,7 @@ export default function CartSummary(props) {
         <p className="catalog" onClick={() => props.setView('catalog', {})}>{sentence}</p>
       </div>
       {cartArray}
-      <div className="row d-flex col-10 justify-content-evenly m-auto">
+      <div className="row d-flex col-10 justify-content-evenly mx-auto mt-3">
         <h2 className="col-10 mt-2">Total: $ {total}</h2>
         {props.cart.length === 0 ? null : checkoutButton}
       </div>
