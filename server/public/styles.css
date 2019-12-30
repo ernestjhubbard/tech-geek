@@ -10,7 +10,7 @@
   min-height: 500px;
   transform: scale
 }
-.card:hover{
+.frontcard:hover{
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   transform-style: preserve-3d;
