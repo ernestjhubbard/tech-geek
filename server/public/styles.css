@@ -8,6 +8,13 @@
 
 .card{
   min-height: 500px;
+  transform: scale
+}
+.card:hover{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: scale(1.05);
 }
 
 .float-right {
